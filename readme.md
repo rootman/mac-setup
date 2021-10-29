@@ -1,31 +1,47 @@
 # Setup Mac
 
 ## Reference
+
 http://sourabhbajaj.com/mac-setup/
 
 ## Steps
 
-Update System: Apple menu () > About This Mac > Software Update.
+### Update System
+
+Apple menu () > About This Mac > Software Update.
+
+### xcode command line tools
 
 ```sh
-# xcode command line tools
 xcode-select --install
+```
 
-# install rosetta 2
+### rosetta 2
+
+```sh
 softwareupdate --install-rosetta
+```
 
-# install homebrew
+### homebrew
+
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-# install tools
+### tools
+
+```sh
 brew install \
 ack \
 composer \
 git \
 php \
 zsh
+```
 
-# quicklook plugins
+### quicklook plugins
+
+```sh
 brew install --cask \
 qlcolorcode \
 qlstephen \
@@ -36,8 +52,11 @@ quicklook-csv \
 betterzip \
 webpquicklook \
 suspicious-package
+```
 
-# install apps
+### apps
+
+```sh
 brew install --cask \
 1password \
 android-file-transfer \
@@ -62,17 +81,30 @@ visual-studio-code \
 vlc \
 alfred \
 whatsapp
+```
 
-# set zsh as default shell
+### set zsh as default shell
+
+```sh
 chsh -s /usr/local/bin/zsh
+```
 
-# install oh my zsh
+### install oh my zsh
+
+```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-# install nvm
-# https://github.com/nvm-sh/nvm#install--update-script
+### nvm
+
+https://github.com/nvm-sh/nvm#install--update-script
+
+```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+```
 
-# install yarn
+### yarn
+
+```sh
 npm install -g yarn
 ```
