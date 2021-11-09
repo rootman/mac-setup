@@ -59,9 +59,7 @@ suspicious-package
 ```sh
 brew install --cask \
 1password \
-android-file-transfer \
 brave-browser \
-cheatsheet \
 discord \
 docker \
 dropbox \
