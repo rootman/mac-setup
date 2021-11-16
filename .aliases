@@ -1,0 +1,39 @@
+bitClone() {
+    git clone git@bitbucket.org:$1.git
+}
+alias bitclone=bitClone
+
+alias gs="git status"
+alias gc="git commit -m "
+alias gaa="git add ."
+alias nah="git reset --hard && git clean -df"
+alias gp="git push"
+alias gcom="git checkout master"
+alias gl="git log"
+
+alias y="yarn"
+
+alias c="code ."
+
+alias rmr="rm -r"
+alias rmrf="rm -rf"
+
+alias home="cd ~"
+alias ii="cd ~"
+alias cdcode="cd ~/code"
+alias cdc="cd ~/code"
+alias ee="cd ~/code"
+alias fng="cd ~/code/fng"
+alias sm="cd ~/code/searchmetrics"
+alias atlas="cd ~/code/atlasti"
+alias atl="cd ~/code/atlasti-site"
+alias d3="cd ~/code/d3-offers"
+
+alias art="php artisan"
+
+alias doc="docker-compose"
+
+dockerStopAll() {
+    docker stop $(docker ps -aq)
+}
+alias dstop=dockerStopAll
